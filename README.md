@@ -17,7 +17,7 @@ Below, I've outlined the steps of this project. The workflow and folders are tow
 - In this project, data will be obtained from the API `yfinance`. You can find relevant stock data from various time frames, and it is widely available for anybody to use.
 - A **summary** will be produced, where you can observe the head of the dataset, it's time range and any relevant variables.
 - Any missing values, outliers and anomalies will be identified and rectified. 
-- Using `NumPy`, I will calculate daily/weekly/monthly/yearly logarithmic returns, using this for their volatilites in the same manner.
+- Using `NumPy`, I will calculate daily/weekly logarithmic returns, using this for their volatilites in the same manner.
 - This will similarly be replicated for rolling averages.
 - Then, I shall perform a **stationarity** test (Augmented Dickey-Fuller) to ensure stationarity.
 
