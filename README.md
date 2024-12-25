@@ -16,15 +16,16 @@ Below, I've outlined the steps of this project. The workflow and folders are tow
 
 - In this project, data will be obtained from the API `yfinance`. You can find relevant stock data from various time frames, and it is widely available for anybody to use.
 - A **summary** will be produced, where you can observe the head of the dataset, it's time range and any relevant variables.
-- Any missing values, outliers and anomalies will be identified and rectified. 
+- Any missing values, and anomalies will be identified and rectified.
+- Then, I shall perform a **stationarity** test (Augmented Dickey-Fuller) to ensure stationarity. If it isn't (non constant autocorrelation, variance etc.) we will transform it as appropriate using logarithms.
 - Using `NumPy`, I will calculate and print daily/weekly/yearly **logarithmic returns**, this helps us to see the average rate of return, day by day, weeky by week, and year on year for quantitative analysis within the `Results` folder. I will also compute the formula for **raw daily volatility**.
-- This will similarly be replicated for **moving averages** (EMA given Quantitative Focus) and I will use daily volatility within the later stage of EDA.
-- Then, I shall perform a **stationarity** test (Augmented Dickey-Fuller) to ensure stationarity.
+- This will similarly be replicated for **moving averages** (EMA, SMA and WMA) and I will use daily volatility within the later stage of EDA.
+  
 
 ### 2. Exploratory Data Analysis 👀
 *Skills: Data Visualisation, Insight Extraction*
 
-- Here, I will create time series visual plots of stock prices, their returns and key features. We will plot the **logarithmic daily returns, moving averages and raw daily volatility** calculated in the previous part. All done with Matplotlib.
+- Here, I will create time series visual plots of stock prices, their returns and key features. We will plot the **logarithmic daily returns, moving averages (EMA, WMA and SMA) and raw daily volatility** calculated in the previous part. All done with Matplotlib.
 - Correlation heatmaps of the variables will also be produced. This is done using `Matplotlib`
 - This time series will furthermore be decomposed into trends, seasonalities and residuals using libraries such as `statsmodels`.
 
