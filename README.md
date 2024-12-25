@@ -15,7 +15,7 @@ Below, I've outlined the steps of this project. The workflow and folders are tow
 *Skills: API Integration, Data Handling, Handling of Messy Data, Data Modelling Preparation, Statistical Testing*
 
 - In this project, data will be obtained from the API `yfinance`. You can find relevant stock data from various time frames, and it is widely available for anybody to use.
-- A **summary** will be produced using `Pandas`, where you can observe the head of the dataset, it's time range and any relevant variables.
+- A **summary** will be produced, where you can observe the head of the dataset, it's time range and any relevant variables.
 - Any missing values, outliers and anomalies will be handled through **transformations** (e.g., logarithmic returns).
 - Various returns will be calculated using `Pandas` for e.g.: daily/weekly/monthly and visualised through `Matplotlib`.
 - This will similarly be replicated for rolling averages, volatility and lagged values with the same libraries.
