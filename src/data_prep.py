@@ -1,6 +1,9 @@
 # Import the libraries you will need. Ensure these are installed using pip :)
 # To obtain up-to-date, reliable stock data, 'yfinance' is used.
 # To carry out mathematical calculation, 'NumPy' is used.
+# To access and utilise the dataset, 'Pandas' is used.
+# To calculate our statistical test, we use 'Statsmodels' and the library 'adfuller'
+
 import yfinance as yf
 import numpy as np
 import pandas as pd
