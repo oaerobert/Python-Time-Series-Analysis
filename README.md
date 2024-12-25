@@ -16,17 +16,17 @@ Below, I've outlined the steps of this project. The workflow and folders are tow
 
 - In this project, data will be obtained from the API `yfinance`. You can find relevant stock data from various time frames, and it is widely available for anybody to use.
 - A **summary** will be produced, where you can observe the head of the dataset, it's time range and any relevant variables.
-- Any missing values, outliers and anomalies will be handled through **transformations** (e.g., logarithmic returns).
-- Various returns will be calculated using `Pandas` for e.g.: daily/weekly/monthly and visualised through `Matplotlib`.
-- This will similarly be replicated for rolling averages, volatility and lagged values with the same libraries.
+- Any missing values, outliers and anomalies will be identified and rectified. 
+- Using `NumPy`, I will calculate daily logarithmic returns, using this for their volatilites.
+- This will similarly be replicated for rolling averages.
 - Then, I shall perform a **stationarity** test (Augmented Dickey-Fuller) to ensure stationarity.
 
 ### 2. Exploratory Data Analysis 👀
 *Skills: Data Visualisation, Insight Extraction*
 
-- Here, I will create time series plots of stock prices, their returns and key features. Correlation heatmaps of the variables will also be produced.
+- Here, I will create time series visual plots of stock prices, their returns and key features. Correlation heatmaps of the variables will also be produced. This is done using `Matplotlib`
 - This time series will furthermore be decomposed into trends, seasonalities and residuals using libraries such as `statsmodels`.
-- Rolling standard deviations and periods of low and high volatility can be calculated using `Numpy` and visualised using `Matplotlib`
+- Rolling standard deviations and periods of low and high volatility can be  visualised using `Matplotlib`
 
 ### 3. Time Series Modelling 🎯
 *Skills: Statistical Modelling, Predictive Analysis*
