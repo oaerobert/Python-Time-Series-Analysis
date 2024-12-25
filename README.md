@@ -60,18 +60,20 @@ Below, I've outlined the steps of this project. The workflow and folders are tow
 
 The workflow for this project will look like the following:
 ```
-Time_Series_Analysis/
+Time_Series_Analysis_S&P500/
 │
-├── data/               # Raw and processed data
-├── src/                # Python scripts for analysis, modeling, and backtesting
-│   ├── preprocessing.py
-│   ├── eda.py
-│   ├── modeling.py
-│   ├── forecasting.py
-│   └── backtesting.py
-├── notebooks/          # Jupyter notebooks for exploration and documentation
-├── results/            # Outputs: Forecasts, backtesting results, performance metrics
-├── README.md           # Project overview
+├── data/               # Raw (and processed where applicable) datasets
+├── src/                # Source code
+│   ├── data_prep.py    # Data acquisition and preprocessing
+│   ├── eda.py          # Exploratory Data Analysis
+│   ├── modeling.py     # Time series modeling
+│   ├── forecasting.py  # Forecasting
+│   ├── backtesting.py  # Back-testing and strategy simulation
+│   └── risk_mgmt.py    # Risk management
+├── notebooks/          # Jupyter notebooks for step-by-step analysis
+├── results/            # Outputs: plots, forecasts, backtesting results
+├── README.md           # Project overview and instructions
 ├── requirements.txt    # Dependencies
+└── LICENSE             # License information
 
 ```
